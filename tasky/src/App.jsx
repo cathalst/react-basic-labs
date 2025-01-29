@@ -6,9 +6,9 @@ function App() {
 
   const [ taskState, setTaskState ] = useState({
     tasks: [
-      { title:"Dishes", description: "Empty dishwasher", deadline: "Today" },
-      { title: "Laundry", description: "Fold clothes and put away", deadline: "Tomorrow" },
-      { title: "Tidy up", deadline: "Today" }
+      { title:"Dishes", description: "Empty dishwasher", deadline: "Today" ,priority: "High" },
+      { title: "Laundry", description: "Fold clothes and put away", deadline: "Tomorrow", priority: "High"},
+      { title: "Tidy up", deadline: "Today", priority: "High" }
     ]
   });
 
@@ -22,6 +22,7 @@ function App() {
       description={task.description}
       deadline={task.deadline}
       key={task.id}
+      priority={task.priority}
     />
   ))}
 

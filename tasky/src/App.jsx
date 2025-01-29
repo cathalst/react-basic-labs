@@ -10,7 +10,7 @@ function App() {
       <Task title="Laundry" deadline="Tomorrow">
        
     </Task>
-    <Task className="description" title="Tidy" deadline="Today" description="Yes">
+    <Task title="Tidy" deadline="Today" description="Yes">
       
     </Task>
     </div>
